@@ -9,11 +9,7 @@
 }
 body {
   margin: 0;
-<<<<<<< HEAD
   background-color: var(--background-color);
-=======
-  background-color: beige;
->>>>>>> e4767fa8b2eb4415321b862e91d2c56b672affd2
   width: 100vw;
   height: 100vh;
   display: flex;
