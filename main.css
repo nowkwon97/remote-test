@@ -5,10 +5,11 @@
   --main-color: #50B867;
   --box-color: aliceblue;
   --bottom-box-color: #D7C7C7;
+  --background-color: aliceblue;
 }
 body {
   margin: 0;
-  background-color: aliceblue;
+  background-color: var(--background-color);
   width: 100vw;
   height: 100vh;
   display: flex;
