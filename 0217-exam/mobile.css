@@ -1,0 +1,240 @@
+@media screen and (max-width: 1023px) {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+
+  :root {
+    --main-color: #2196F3;
+    --sub-color: #FFFFFF;
+    --footer-color: #333333;
+    --footer-font-color: #F0F0F0;
+  }
+  
+  /* 전체 사이즈 지정 */
+  .wrapper {
+    width: 430px;
+    height: 1864px;
+  }
+  /* top 사이즈 지정*/
+  .top {
+    width: 100%;
+    height: 5%;
+  }
+  /* middle 사이즈 지정*/
+  .middle {
+    width: 100%;
+    height: 85%;
+  }
+  /* bottom 사이즈 지정*/
+  .bottom {
+    width: 100%;
+    height: 10%;
+  }
+  /* page-1 */
+  .middle > .page-1 {
+    width: 100%;
+    height: 50%;
+    background-color: var(--sub-color);
+  }
+  /* top header */
+  .top > header {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /* top header victor 디자인 */
+  .top > header a {
+    color: var(--sub-color);
+    text-decoration: none;
+    font-size: 20px
+  }
+  
+  .top > header > div {
+    width: 100%;
+    color: var(--sub-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+    margin-top: 12%;
+  }
+  /* 모바일에선 nav 숨김 */
+  .top nav {
+    display: none;
+  }
+  /* page-1 main */
+  .middle > .page-1 > main {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  /* 글자 겹치는 기능 -> margin-bottom으로 구현 */
+  /* 왼쪽 공배: position에서 margin-left로 변경 */
+  .middle >.page-1 > main > div {
+    width: auto;
+    height: 96px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 100%;
+    margin-bottom: -40px;
+    margin-left: 23px;
+  }
+  /* 2~4번째 텍스트 컬러 변경 */
+  .middle >.page-1 > main > div:nth-child(n+2):nth-child(-n+4) {
+    color: var(--main-color);
+  }
+  /* page-1 footer */
+  .middle > .page-1 > footer {
+    width: 100%;
+    height: 20%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+    color: var(--main-color);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+  /*  */
+  footer > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .page-1 > footer {
+    margin-top: 100px;
+  }
+  .middle > .page-1 > footer > div > div:nth-child(1) {
+    width: 8px;
+    height: 14px;
+    margin-bottom: 50px;
+    transform: rotate(90deg);
+  }
+  /* page-1 footer victor 디자인 */
+  .middle > .page-1 > footer a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 20px
+  }
+  
+  .middle > .page-1 > footer > div > div:nth-child(2) {
+    width: 300px;
+    height: 30px;
+  }
+  
+  /* page-2 */
+  .middle > .page-2 {
+    width: 100%;
+    height: 50%;
+    background-color: var(--main-color);
+  }
+  /* page-2 header */
+  .middle > .page-2 header {
+    width: 100%;
+    height: 10%;
+  }
+  /* page-2 main */
+  .middle > .page-2 main {
+    width: 100%;
+    height: 70%;
+  
+    font-family: 'Inter', sans-serif;
+    font-family: 'Karantina', cursive;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 130px;
+    color: var(--sub-color);
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* main 글자 margin 조정 */
+  .middle > .page-2 main > div {
+    margin-left: 19px;
+  }
+  /* TRAINING 밑줄 설정 */
+  .middle > .page-2 main > div:nth-child(3) {
+    text-decoration: underline;
+  }
+  .middle > .page-2 main > div:nth-child(2) {
+    display: flex;
+  }
+  /* page-2 main victor 디자인 */
+  .middle > .page-2 a {
+    color: var(--sub-color);
+    text-decoration: none;
+    font-size: 100px
+  }
+  .middle > .page-2 main > div:nth-child(2) > div:nth-child(2) {
+    margin-left: 20%;
+  }
+  /* bottom footer */
+  
+  .bottom footer {
+    width: 100%;
+    height: 100%;
+  
+    background-color: var(--footer-color);
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  /* footer margin-left 설정 */
+  .bottom > footer > div {
+    margin-left: 10%;
+  }
+  /* footer 윗 선 구현 */
+  .bottom footer > div:nth-child(1) {
+    width: 80%;
+    height: 2px;
+    background-color: #D9D9D9;
+  }
+  /* footer 내용 설정 */
+  .bottom footer > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: var(--footer-font-color);
+    
+    margin-top: 10px;
+  }
+  /* footer 내용 간격 설정 */
+  .bottom footer > div:nth-child(2) > div {
+    margin-bottom: 8px;
+  }
+}
+
